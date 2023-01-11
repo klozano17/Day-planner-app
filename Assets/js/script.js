@@ -3,13 +3,11 @@
 // in the html.
 $(function () {
 
-
-
-  var now = dayjs();
-  var regularTime = now.format('hh');
   var militaryTime = now.format('HH');
+  var regularTime = now.format('hh');
   var currentDay = $('#currentDay');
-
+  var now = dayjs();
+  
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage.
